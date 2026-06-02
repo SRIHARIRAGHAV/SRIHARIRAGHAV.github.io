@@ -575,15 +575,7 @@ hamburger.addEventListener('click',()=>{
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeMenu(); });
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XCSEFB8NJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-0XCSEFB8NJ');
 /* ── Scroll reveal ── */
 const reveals = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver(entries=>{
@@ -598,3 +590,13 @@ reveals.forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XCSEFB8NJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XCSEFB8NJ');
+</script>
